@@ -29,6 +29,13 @@ def has_book_with_title(title, library):
     return has_book
 
 
+def get_books_by_genre(genre, library):
+    found_books = []
+    for book in library["books"]:
+        if book["genre"] == genre:
+            found_books.append(book)
+    return found_books
+
 # what is the function called?
 # what parameters does it need?
 # what does the function need to return?

@@ -79,7 +79,7 @@ class TestLibrary(unittest.TestCase):
         actual = has_book_with_title("Head First Python", self.library)
         self.assertEqual(expected, actual)
 
-    @unittest.skip("delete this line to run the test")
+
     def test_get_books_by_genre(self):
         expected = [self.book_2, self.book_3]
         actual = get_books_by_genre("Fantasy", self.library)
