@@ -16,11 +16,9 @@ def remove_book(book, library):
 
 
 def get_book_by_title(title, library):
-    found_book = None
     for book in library["books"]:
         if book["title"] == title:
-            found_book = book
-    return found_book
+            return book
 
 
 # what is the function called?
