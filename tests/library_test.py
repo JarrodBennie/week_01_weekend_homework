@@ -30,7 +30,7 @@ class TestLibrary(unittest.TestCase):
             ]
         }
 
-    @unittest.skip("delete this line to run the test")
+
     def test_get_name(self):
         expected = "CodeClan Library"
         actual = get_name(self.library)
