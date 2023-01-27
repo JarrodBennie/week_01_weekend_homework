@@ -54,7 +54,7 @@ class TestLibrary(unittest.TestCase):
         actual = self.library["books"][3]
         self.assertEqual(expected, actual)
 
-    @unittest.skip("delete this line to run the test")
+
     def test_remove_book(self):
         remove_book(self.book_1, self.library)
         expected = [self.book_2, self.book_3]
