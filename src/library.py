@@ -21,6 +21,14 @@ def get_book_by_title(title, library):
             return book
 
 
+def has_book_with_title(title, library):
+    has_book = False
+    for book in library["books"]:
+        if book["title"] == title:
+            has_book = True
+    return has_book
+
+
 # what is the function called?
 # what parameters does it need?
 # what does the function need to return?
