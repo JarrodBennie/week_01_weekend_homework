@@ -61,7 +61,7 @@ class TestLibrary(unittest.TestCase):
         actual = self.library["books"]
         self.assertEqual(expected, actual)
 
-    @unittest.skip("delete this line to run the test")
+
     def test_get_book_by_title(self):
         expected = self.book_1
         actual = get_book_by_title("Clean Code", self.library)
