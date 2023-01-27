@@ -5,6 +5,10 @@ def get_name(library):
 def get_books(library):
     return library["books"]
 
+
+def add_book(book, library):
+    library["books"].append(book)
+
 # what is the function called?
 # what parameters does it need?
 # what does the function need to do?

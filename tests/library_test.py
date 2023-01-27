@@ -42,7 +42,7 @@ class TestLibrary(unittest.TestCase):
         actual = get_books(self.library)
         self.assertEqual(expected, actual)
 
-    @unittest.skip("delete this line to run the test")
+
     def test_add_book(self):
         new_book = {
             "title": "The Hobbit",
@@ -51,7 +51,7 @@ class TestLibrary(unittest.TestCase):
         }
         add_book(new_book, self.library)
         expected = new_book
-        actual = self.library[3]
+        actual = self.library["books"][3]
         self.assertEqual(expected, actual)
 
     @unittest.skip("delete this line to run the test")
