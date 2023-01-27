@@ -36,7 +36,7 @@ class TestLibrary(unittest.TestCase):
         actual = get_name(self.library)
         self.assertEqual(expected, actual)
 
-    @unittest.skip("delete this line to run the test")
+
     def test_get_books(self):
         expected = [self.book_1, self.book_2, self.book_3]
         actual = get_books(self.library)
